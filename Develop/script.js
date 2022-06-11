@@ -1,5 +1,4 @@
-var todaysDate = moment().format('dddd, MMM Do YYYY');
-$('#todaysDate').html(todaysDate);
+document.getElementById("todaysDate").textContent = moment().format('dddd, MMM Do YYYY');
 
 function trackTime() {
     var currentTime = moment().hour();
@@ -28,9 +27,15 @@ function trackTime() {
     })
 }
 
+function saveTask(event) {
+   var taskEvent = event.target.getAttribute("type")
+   console.log(taskEvent)
+
+   var key = Math.random();
+   var value = 
+
+
 trackTime();
-
-
 
 
 
